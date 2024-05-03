@@ -1,0 +1,4 @@
+05/03-02:35:57.227011  [**] [1:408:5] ICMP Echo Reply [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.10.35 -> 192.168.10.33
+05/03-02:36:14.516822  [**] [1:366:7] ICMP PING *NIX [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.10.33 -> 192.168.10.35
+05/03-02:36:14.516822  [**] [1:384:5] ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.10.33 -> 192.168.10.35
+05/03-02:36:14.516843  [**] [1:408:5] ICMP Echo Reply [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.10.35 -> 192.168.10.33
