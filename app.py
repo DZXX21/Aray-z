@@ -37,19 +37,29 @@ def app_deploy(plopper_df):
     app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
     # Navbar setup
-    navbar = dbc.NavbarSimple(
+    navbar = dbc.Navbar(
         children=[
-            dbc.NavItem(dbc.NavLink("Link", href="#"))
+            html.A(
+                dbc.Row(
+                    [
+                        dbc.Col(html.Img(src="/assets/logo.png", height="80px")),
+                        dbc.Col(dbc.NavbarBrand("Home", className="ml-2")),
+                    ],
+                    align="center",
+                    # no_gutters=True  # Remove this line
+                ),
+                href="#",
+            ),
         ],
-        brand="Plopper",
-        brand_href="#",
-        sticky="top"
+        color="dark",
+        dark=True,
+        sticky="top",
     )
 
     # body setup
     body = dbc.Container([
         dbc.Row([
-            html.H2("Dashboard")
+            html.H2("OSET ARAY-Z")
         ]),
         dbc.Row([
             dbc.Col([
@@ -194,4 +204,5 @@ def app_deploy(plopper_df):
 
 
 if __name__ == "__main__":
-    app_deploy(plopper_df)  # Burada plopper_df'in nasıl oluşturulduğuna dikkat edin
+    # Assuming plopper_df is defined and populated elsewhere in your code
+    app_deploy(plopper_df)
